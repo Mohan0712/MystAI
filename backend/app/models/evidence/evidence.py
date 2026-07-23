@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from pydantic import ConfigDict, Field
 
 from app.models.base import BaseEntity
-from backend.app.models.evidence.EvidenceType import EvidenceType
+from backend.app.models.evidence.types import EvidenceType
 
 
 class Evidence(BaseEntity):

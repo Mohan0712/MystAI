@@ -9,7 +9,7 @@ from app.models.evidence.types import EvidenceType
 
 class ProcessEvidence(Evidence):
     """
-    Evidence representing a running or executed process.
+    Represents a process observed during an investigation.
     """
 
     evidence_type: EvidenceType = Field(
