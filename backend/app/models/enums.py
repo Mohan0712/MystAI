@@ -103,3 +103,10 @@ class DnsResponseCode(str, Enum):
     NXDOMAIN = "NXDOMAIN"
     SERVFAIL = "SERVFAIL"
     REFUSED = "REFUSED"
+
+class AuthenticationMethod(str, Enum):
+    PASSWORD = "Password"
+    KERBEROS = "Kerberos"
+    NTLM = "NTLM"
+    OAUTH = "OAuth"
+    SAML = "SAML"
