@@ -97,3 +97,9 @@ class InvestigationStatus(str, Enum):
     CONTAINED = "CONTAINED"
     RESOLVED = "RESOLVED"
     CLOSED = "CLOSED"
+
+class DnsResponseCode(str, Enum):
+    NOERROR = "NOERROR"
+    NXDOMAIN = "NXDOMAIN"
+    SERVFAIL = "SERVFAIL"
+    REFUSED = "REFUSED"
