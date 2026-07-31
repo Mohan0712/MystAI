@@ -11,17 +11,6 @@ class Severity(str, Enum):
     CRITICAL = "CRITICAL"
 
 
-class InvestigationStatus(str, Enum):
-    """Represents the lifecycle of an investigation."""
-
-    OPEN = "OPEN"
-    ENRICHING = "ENRICHING"
-    ANALYZING = "ANALYZING"
-    REPORT_GENERATED = "REPORT_GENERATED"
-    UNDER_REVIEW = "UNDER_REVIEW"
-    CLOSED = "CLOSED"
-
-
 class EventSource(str, Enum):
     """Represents the origin of a security event."""
 
@@ -98,15 +87,15 @@ class InvestigationStatus(str, Enum):
     RESOLVED = "RESOLVED"
     CLOSED = "CLOSED"
 
-class DnsResponseCode(str, Enum):
-    NOERROR = "NOERROR"
-    NXDOMAIN = "NXDOMAIN"
-    SERVFAIL = "SERVFAIL"
-    REFUSED = "REFUSED"
 
-class AuthenticationMethod(str, Enum):
-    PASSWORD = "Password"
-    KERBEROS = "Kerberos"
-    NTLM = "NTLM"
-    OAUTH = "OAuth"
-    SAML = "SAML"
+class AlertStatus(str, Enum):
+    NEW = "NEW"
+    ACKNOWLEDGED = "ACKNOWLEDGED"
+    INVESTIGATION_CREATED = "INVESTIGATION_CREATED"
+    CLOSED = "CLOSED"
+
+class ReportStatus(str, Enum):
+    DRAFT = "DRAFT"
+    GENERATED = "GENERATED"
+    REVIEWED = "REVIEWED"
+    APPROVED = "APPROVED"
