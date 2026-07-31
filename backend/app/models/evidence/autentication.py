@@ -2,7 +2,7 @@ from ipaddress import IPv4Address, IPv6Address
 from typing import Optional
 
 from pydantic import ConfigDict, Field
-
+from app.models.evidence.enums import AuthenticationMethod
 from app.models.evidence.evidence import Evidence
 from app.models.evidence.types import EvidenceType
 
